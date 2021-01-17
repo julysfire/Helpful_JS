@@ -36,5 +36,34 @@ int main(){
 	//FGets(variable to store it in, max length, stdin which is "standard input")
 	printf("Your name is %s.\n",name2);
 
+	//Can scan for two strings or more
+	char fName[20];
+	char lName[20];
+
+	printf("Enter a first name and last name: ");
+	scanf("%s%s",fName,lName);
+	print("The name you entered was %s %s.\n", fName,lName);
+
+
+	//Arrays
+	int luckyNumbers[] = {4,8,15,16,23,43};
+
+	//Another function
+	sayHi();
+
+	//Basic if
+	int num1 = 1;
+	int num2 = 2;
+	int greater = 0;
+
+	if(num1 > num2){
+		greater = num1;
+	}else {
+		greater = num2;
+	}
 	return 0;
+}
+
+void sayHi(){
+	printf("Hello World\n");
 }
