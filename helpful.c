@@ -61,6 +61,52 @@ int main(){
 	}else {
 		greater = num2;
 	}
+
+	//Basic for loop
+	int myNumArray[6]={20,30,40,50,60,70};
+	int accessArray = myNumArray[0];
+	printf("Value=%d\n",accessArray);
+	for(int i=0;i<6;i++){
+		printf("elements[%d]=%d\n",i,myNumArray[i]);
+	}
+
+	//Ternary operator
+	int a = 25, b = 20;
+	int c;
+	
+	c = (a > b) ? b: a;
+	printf("Answer: %d\n",c);
+
+	//Switch statements
+	int marks=90;
+	switch(marks){
+		case 90:
+			printf("Excellent\n");
+			break;
+		case 75:
+			printf("Meh\n");
+			break;
+		default:
+			printf("Unavilable\n");
+	}
+
+	//While loops
+	
+	//Test at the start of the loop
+	int whileTest = 0;
+
+	while(whileTest < 10){
+		printf("While Test: %d\n",whileTest);
+		whileTest++;
+	}
+
+	//Test at the end
+	whileTest = 0;
+	do{
+		printf("While Test in do loop: %d\n",whileTest);
+		whileTest++;
+	}while(whileText<10);
+
 	return 0;
 }
 
